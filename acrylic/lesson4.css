@@ -1,0 +1,112 @@
+*{
+	margin:0;/* ul - тут мы указали маргин 0 потому что тут 0 пикселей*/
+	padding:0;
+	box-sizing: border-box; 
+}
+
+body{
+	font-size: 1.3rem;
+	font-family: Arial;
+	background-color: #f9f9f9;
+
+}
+
+
+a {
+	color:#333; /*ul - тут мы указали цвет и убрали пару штрихов*/
+	text-decoration:none;
+
+}
+
+.container { /*ul - тут мы указали маргин и указали паддинг в рем потому что рем это разумный размер  */
+	max-width: 1100px;
+	margin:auto;
+	overflow: hidden; /*ul - будет измерять его пока не вместеться*/
+	padding: 0 2rem; 
+
+}
+
+.main-header {
+	height: 55vh;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.main-header h1 {
+	font-size: 4rem;
+	marker-bottom:2rem;
+	line-height: 1.2;
+
+}
+
+
+.main-header h1 span {
+	color: #b50d10;
+}
+
+.main-header p {
+	font-size: 2rem;
+
+}
+
+img {
+	width: 100%;
+
+}
+
+.card {
+	display: grid; /*ul - если коротко то грид это это вертикальные и горизантальные линий или столбы*/
+	grid-template-columns: repeat(2,1fr); /*ul - короче определяет гибкость и функций линий*/
+	grid-gap: 2rem;
+	background-color: #f1f1f1; /*ul - задний цвет*/
+	margin-bottom: 2rem;
+}
+
+
+.card h3 {
+	margin-bottom: 2rem; /*ul - тут мы именно изменили h3 в классе */
+
+}
+
+.card img {
+	height: 400px; /*ul - тоже самое что и с h3 */
+
+}
+
+
+.card > div {
+	padding: 2rem;
+
+}
+
+
+.card:nth-child(even) img{
+	order: 2;
+}
+
+
+.btn {
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	padding: 0.8rem 1.8rem;
+	margin-top: 2rem;
+	cursor: pointer;
+}
+
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+
+@media(max-width: 600px) {
+	.card {
+		display: block;
+	}
+}
+

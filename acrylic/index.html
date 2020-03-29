@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MY LIFE</title>
+	<style>
+		ul{ /*ul - тут мы в html ле юзали css тем самым облегчив себе путь*/
+			display: flex;
+			justify-content: center;
+		}
+
+		li{
+			list-style: none;
+			border-right: 2px solid black;
+			padding-right: 40px;
+			padding-left: 40px;
+
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+
+		}
+
+	</style>
+	<link rel="stylesheet" href="hover.css"> <!-- ul - тут мы запарсили данные с сайта с помощию хрев и указали файл -->
+	<link rel="stylesheet" href="lesson4.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+	<ul> <!-- ul - тут мы создали пару кнопак и указали ссылку -->
+		<li><a href="#" class="hvr-sweep-to-right">Assortimenti</a></li>
+		<li><a href="#" class="hvr-sweep-to-right">0 nas</a></li>
+		<li><a href="#" class="hvr-sweep-to-right">Zakas</a></li>
+		<li><a href="#" class="hvr-sweep-to-right">Kontakti</a></li>
+
+	</ul>
+	<div class="main-header"> <!-- ul - тут мы с помощью спан сделали главный загаловок сайта типа РАМЗАТ ВЕБ САЙТ -->
+		<h1><span>Ramzat</span> website</h1>
+		<p>Official Ramzat information</p>
+
+	</div>
+	<div class="container"><!--  ul - тут мы создали контейнера и прекрепили картинки формата jpg -->
+		<div class="card" data-aos="flip-left">
+			<img src="terion.jpg" alt="">
+			<div>
+				<h3>Меня зовут Рамзат мне 17 лет сижу на шее у родителей люблю играть в онлайн игры бывший футболист шахматист да и просто крутой чувак!!!</h3>
+				<p>Окончил 11 классов</p>
+				<p>Смотрю Аниме</p>
+				<a href="https://vk.com/id240297618" class="btn">VK</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card" data-aos="flip-left">
+			<img src="Borya.jpg" alt="">
+			<div>
+				<h3>Мой кореш Влад вот кстати он ему 17 лет и он алкаш жизнь довела </h3>
+				<p>Тоже играет в доту и смотрит anime!!</p>
+				<a href="#" class="btn">Что-то должно было быть</a>
+			</div>
+		</div>
+
+		<div class="card" data-aos="flip-left">
+			<img src="9hq.jpg" alt="">
+			<div>
+				<h3>Отцу 59 лет Маме 56 лет еще у меня есть два брата страший Рабат ему 30 уже старик а средний Руфат ему 26 лет не женат </h3>
+				<p>Обе брата играют в доту но родители против этого!</p>
+				<a href="#" class="btn">Family website</a>
+			</div>
+		</div>
+
+		<div class="card" data-aos="flip-left">
+			<img src="Young_Kurama.jpg" alt="">
+			<div>
+				<h3>Имя:брисеида</h3>
+				<h3>порода:???</h3>
+				<h3>вес:2-4кг</h3>
+				<p>очень ленивый кот только кушает и спит больше ничего не делает в принцепе как и я :)</p>
+				<a href="#" class="btn">Cat</a>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- ul - это скрипт для анимация контейнеров -->
+		<script>
+  			AOS.init();
+		</script>
+		
+
+</body>
+</html>
